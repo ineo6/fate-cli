@@ -1,0 +1,37 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "archer": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "is-windows": "^1.0.2",
+    "resolve-cwd": "^2.0.0",
+    "signale": "^1.3.0",
+    "slash2": "^2.0.0",
+    "update-notifier": "^2.5.0",
+    "yargs-parser": "^13.0.0",
+    "n-build-dev": "1.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-do-expressions": "^7.2.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "chokidar": "^2.1.1",
+    "lerna": "^3.11.1",
+    "rimraf": "^2.6.3",
+    "through2": "^3.0.0",
+    "vinyl-fs": "^3.0.3"
+  }
+}

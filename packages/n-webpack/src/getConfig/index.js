@@ -102,7 +102,7 @@ export default function(opts) {
   rule
     .end()
     .use('url-loader')
-    .loader(require.resolve('umi-url-pnp-loader'))
+    .loader(require.resolve('url-loader'))
     .options({
       limit: opts.inlineLimit || DEFAULT_INLINE_LIMIT,
       name: 'static/[name].[hash:8].[ext]',
@@ -114,7 +114,6 @@ export default function(opts) {
     sourceType: 'unambiguous',
     cacheDirectory: process.env.BABEL_CACHE !== 'none', // enable by default
     babelrc: !!process.env.BABELRC, // disable by default
-    customize: require.resolve('babel-preset-umi/lib/webpack-overrides'),
   };
   const babel = opts.babel || {};
   const babelOpts = {
