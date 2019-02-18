@@ -137,13 +137,6 @@ export default function(opts) {
     ...babelOptsCommon,
   };
 
-  if (opts.disableDynamicImport) {
-    babelOpts.plugins = [
-      ...(babelOpts.plugins || []),
-      require.resolve('babel-plugin-dynamic-import-node'),
-    ];
-  }
-
   // module -> eslint
   if (process.env.ESLINT && process.env.ESLINT !== 'none') {
     require('./eslint').default(webpackConfig, opts);

@@ -1,8 +1,8 @@
 {
   "name": "n-webpack",
-  "version": "1.4.3",
+  "version": "1.0.0",
   "bin": {
-    "af-webpack": "./bin/af-webpack.js"
+    "n-webpack": "./bin/af-webpack.js"
   },
   "scripts": {
     "build": "babel src --out-dir lib"

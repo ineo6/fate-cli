@@ -28,7 +28,7 @@ export default function (service) {
     const envAffix = process.env.NODE_ENV === 'development' ? '' : `-production`;
     const tmpDirPath = process.env.UMI_TEMP_DIR
         ? `${process.env.UMI_TEMP_DIR}${envAffix}`
-        : `${pagesPath}/.umi${envAffix}`;
+        : `${pagesPath}/.archer${envAffix}`;
 
     const absTmpDirPath = join(cwd, tmpDirPath);
 
@@ -43,8 +43,6 @@ export default function (service) {
         tmpDirPath,
         absTmpDirPath,
         appSrc: join(cwd, 'app'),
-        absRouterJSPath: join(absTmpDirPath, 'router.js'),
-        absLibraryJSPath: join(absTmpDirPath, 'umi.js'),
         absRegisterSWJSPath: join(absTmpDirPath, 'registerServiceWorker.js'),
         absPageDocumentPath: join(absPagesPath, 'document.ejs'),
         defaultEntryTplPath: template('entry.js.tpl'),

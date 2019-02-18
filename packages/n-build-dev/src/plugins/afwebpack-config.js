@@ -14,6 +14,7 @@ const excludes = ['entry', 'outputPath'];
 export default function (api) {
     const {debug, cwd, config, paths} = api;
 
+    console.error("config", config);
     // 把 n-webpack 的配置插件转化为 umi-build-dev 的
     api._registerConfig(() => {
         return plugins
@@ -51,8 +52,8 @@ export default function (api) {
     );
     api.chainWebpackConfig(webpackConfig => {
         webpackConfig.resolve.alias
-            // .set('react', reactDir)
-            // .set('react-dom', reactDOMDir)
+        // .set('react', reactDir)
+        // .set('react-dom', reactDOMDir)
             .set('@', paths.absSrcPath)
             .set('@tmp', paths.absTmpDirPath)
     });
@@ -115,7 +116,7 @@ export default function (api) {
             browserslist,
             entry,
             outputPath: paths.absOutputPath,
-            disableDynamicImport: true,
+            disableDynamicImport: false,
             babel: config.babel || {
                 presets: [
                     [
