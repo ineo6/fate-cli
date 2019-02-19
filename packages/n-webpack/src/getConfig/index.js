@@ -34,8 +34,8 @@ export default function(opts) {
   const absOutputPath = resolve(cwd, opts.outputPath || 'dist');
   webpackConfig.output
     .path(absOutputPath)
-    .filename(`[name].js`)
-    .chunkFilename(`[name].async.js`)
+    .filename(`assets/[name].js`)
+    .chunkFilename(`assets/[name].chunk.js`)
     .publicPath(opts.publicPath || undefined)
     .devtoolModuleFilenameTemplate(info => {
       return relative(opts.cwd, info.absoluteResourcePath).replace(/\\/g, '/');

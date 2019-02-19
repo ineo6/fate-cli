@@ -78,14 +78,14 @@ export default function (api) {
             (config.exportStatic && config.exportStatic.dynamicRoot);
         const entry = isDev
             ? {
-                umi: [
+                app: [
                     ...(process.env.HMR === 'none' ? [] : [webpackHotDevClientPath]),
                     ...(setPublicPath ? [setPublicPathFile] : []),
                     entryScript,
                 ],
             }
             : {
-                umi: [...(setPublicPath ? [setPublicPathFile] : []), entryScript],
+                app: [...(setPublicPath ? [setPublicPathFile] : []), entryScript],
             };
 
         const targets = {
@@ -133,12 +133,6 @@ export default function (api) {
             },
             define: {
                 'process.env.BASE_URL': config.base || '/',
-                __UMI_BIGFISH_COMPAT: process.env.BIGFISH_COMPAT,
-                __UMI_HTML_SUFFIX: !!(
-                    config.exportStatic &&
-                    typeof config.exportStatic === 'object' &&
-                    config.exportStatic.htmlSuffix
-                ),
                 ...(config.define || {}),
             },
             publicPath: isDev

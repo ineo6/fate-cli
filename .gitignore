@@ -4,3 +4,4 @@ package-lock.json
 lib
 dist
 .idea
+yarn-error.log
