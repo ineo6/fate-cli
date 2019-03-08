@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "babel-build": "./build.js"
+    "babel-tool": "./build.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,17 +12,18 @@
   "keywords": [],
   "author": "ineo6",
   "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.0",
+  "devDependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/plugin-proposal-do-expressions": "^7.2.0",
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "chokidar": "^2.1.1",
-    "lerna": "^3.11.1",
+    "chalk": "^2.4.2",
+    "chokidar": "^2.1.2",
     "rimraf": "^2.6.3",
-    "through2": "^3.0.0",
+    "through2": "^3.0.1",
     "vinyl-fs": "^3.0.3"
   }
 }
