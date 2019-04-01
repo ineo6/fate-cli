@@ -4,7 +4,7 @@ import assert from 'assert';
 import { isPlainObject } from 'lodash';
 import { printFileSizesAfterBuild } from 'react-dev-utils/FileSizeReporter';
 
-const debug = require('debug')('af-webpack:build');
+const debug = require('debug')('n-webpack:build');
 
 // These sizes are pretty large. We'll warn for bundles exceeding them.
 const WARN_AFTER_BUNDLE_GZIP_SIZE = 512 * 1024;

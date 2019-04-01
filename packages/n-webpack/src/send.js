@@ -1,4 +1,4 @@
-const debug = require('debug')('af-webpack:send');
+const debug = require('debug')('n-webpack:send');
 
 export const DONE = 'DONE';
 export const STARTING = 'STARTING';

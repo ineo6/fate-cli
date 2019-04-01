@@ -9,7 +9,7 @@ import { clearConsole } from '../reactDevUtils';
 import { watch, unwatch } from './watch';
 import getPlugins from './getPlugins';
 
-const debug = require('debug')('af-webpack:getUserConfig');
+const debug = require('debug')('n-webpack:getUserConfig');
 
 const plugins = getPlugins();
 const pluginNames = plugins.map(p => p.name);

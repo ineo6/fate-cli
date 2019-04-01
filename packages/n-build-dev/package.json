@@ -1,6 +1,6 @@
 {
   "name": "n-build-dev",
-  "version": "1.4.4",
+  "version": "1.0.0",
   "dependencies": {
     "@babel/code-frame": "7.0.0",
     "@babel/generator": "7.3.0",
@@ -65,14 +65,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/umijs/umi/tree/master/packages/umi-build-dev"
+    "url": "https://github.com/ineo6/fate-cli/tree/master/packages/n-build-dev"
   },
-  "homepage": "http://github.com/umijs/umi/tree/master/packages/umi-build-dev",
+  "homepage": "https://github.com/ineo6/fate-cli/tree/master/packages/n-build-dev",
   "authors": [
-    "chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)"
+    "ineo6"
   ],
   "bugs": {
-    "url": "http://github.com/umijs/umi/issues"
+    "url": "https://github.com/ineo6/fate-cli/issues"
   },
   "license": "MIT",
   "files": [

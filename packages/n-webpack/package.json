@@ -2,7 +2,7 @@
   "name": "n-webpack",
   "version": "1.0.0",
   "bin": {
-    "n-webpack": "./bin/af-webpack.js"
+    "n-webpack": "./bin/n-webpack.js"
   },
   "scripts": {
     "build": "babel src --out-dir lib"
@@ -89,14 +89,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/umi/tree/master/packages/af-webpack"
+    "url": "https://github.com/ineo6/fate-cli/tree/master/packages/n-webpack"
   },
-  "homepage": "https://github.com/umijs/umi/tree/master/packages/af-webpack",
+  "homepage": "https://github.com/ineo6/fate-cli/tree/master/packages/n-webpack",
   "authors": [
-    "chencheng <sorrycc@gmail.com> (https://github.com/sorrycc)"
+    "ineo6"
   ],
   "bugs": {
-    "url": "https://github.com/umijs/umi/issues"
+    "url": "https://github.com/ineo6/fate-cli/issues"
   },
   "license": "MIT",
   "files": [

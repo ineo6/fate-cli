@@ -51,7 +51,7 @@ export default function dev({
       const IS_CI = !!process.env.CI;
       const SILENT = !!process.env.SILENT;
       const urls = prepareUrls(PROTOCOL, HOST, port, base);
-      compiler.hooks.done.tap('af-webpack dev', stats => {
+      compiler.hooks.done.tap('n-webpack dev', stats => {
         if (stats.hasErrors()) {
           // make sound
           // ref: https://github.com/JannesMeyer/system-bell-webpack-plugin/blob/bb35caf/SystemBellPlugin.js#L14
