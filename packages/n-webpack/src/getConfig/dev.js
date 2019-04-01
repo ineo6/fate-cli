@@ -25,7 +25,7 @@ export default function(webpackConfig, opts) {
         environmentHash: {
           root: process.cwd(),
           directories: ['config'],
-          files: ['package-lock.json', 'yarn.lock', '.umirc.js', '.umirc.local.js'],
+          files: ['package-lock.json', 'yarn.lock', '.faterc.js', '.faterc.local.js'],
         },
       },
     ]);

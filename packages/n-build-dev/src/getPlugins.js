@@ -86,7 +86,7 @@ Plugin ${chalk.underline.cyan(path)} can't be resolved
 
    Please try the following solutions:
 
-     1. checkout the plugins config in your config file (.umirc.js or config/config.js)
+     1. checkout the plugins config in your config file (.faterc.js or config/config.js)
      ${
        path.charAt(0) !== '.' && path.charAt(0) !== '/'
          ? `2. install ${chalk.underline.cyan(path)} via npm/yarn`

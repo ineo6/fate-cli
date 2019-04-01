@@ -1,6 +1,6 @@
 export const CONFIG_FILES = process.env.UMI_CONFIG_FILE
   ? getConfigFiles(process.env.UMI_CONFIG_FILE)
-  : ['.umirc.js', 'config/config.js'];
+  : ['.faterc.js', 'config/config.js'];
 
 export const EXT_LIST = ['.js', '.jsx', '.ts', '.tsx'];
 
