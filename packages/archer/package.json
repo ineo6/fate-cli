@@ -19,7 +19,7 @@
     "slash2": "^2.0.0",
     "update-notifier": "^2.5.0",
     "yargs-parser": "^13.0.0",
-    "n-build-dev": "1.4.4"
+    "n-build-dev": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
