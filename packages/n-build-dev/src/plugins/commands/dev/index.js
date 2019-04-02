@@ -130,7 +130,7 @@ export default function(api) {
               });
               if (isFirstCompile) {
                 notify.onDevComplete({
-                  name: 'umi',
+                  name: 'archer',
                   version: 2,
                 });
               }

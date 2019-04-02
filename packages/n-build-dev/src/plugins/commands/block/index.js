@@ -23,7 +23,7 @@ export default api => {
         break;
       default:
         throw new Error(
-          `Please run ${chalk.cyan.underline('umi help block')} to checkout the usage`,
+          `Please run ${chalk.cyan.underline('archer help block')} to checkout the usage`,
         );
     }
   }
@@ -135,7 +135,7 @@ export default api => {
     const url = args._[1];
     assert(
       url,
-      `run ${chalk.cyan.underline('umi help block')} to checkout the usage`,
+      `run ${chalk.cyan.underline('archer help block')} to checkout the usage`,
     );
 
     const useYarn = existsSync(join(paths.cwd, 'yarn.lock'));
@@ -379,24 +379,24 @@ Options for the ${chalk.cyan(`add`)} command:
 Examples:
 
   ${chalk.gray(`# Add block`)}
-  umi block add demo
-  umi block add ant-design-pro/Monitor
+  archer block add demo
+  archer block add ant-design-pro/Monitor
 
   ${chalk.gray(`# Add block with full url`)}
-  umi block add https://github.com/umijs/umi-blocks/tree/master/demo
+  archer block add https://github.com/umijs/umi-blocks/tree/master/demo
 
   ${chalk.gray(`# Add block with specified route path`)}
-  umi block add demo --path /foo/bar
+  archer block add demo --path /foo/bar
 
   ${chalk.gray(`# List all blocks`)}
-  umi list
+  archer list
   `.trim();
 
   api.registerCommand(
     'block',
     {
       description: 'block related commands, e.g. add, list',
-      usage: `umi block <command>`,
+      usage: `archer block <command>`,
       details,
     },
     args => {

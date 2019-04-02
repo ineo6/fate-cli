@@ -1,7 +1,7 @@
 import assert from 'assert';
 import { diffPlugins } from '../../getPlugins';
 
-const debug = require('debug')('umi-build-dev:configPlugin:plugins');
+const debug = require('debug')('n-build-dev:configPlugin:plugins');
 
 export default function(api) {
   return {

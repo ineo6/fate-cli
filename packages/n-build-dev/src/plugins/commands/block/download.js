@@ -3,7 +3,7 @@ import { existsSync } from 'fs';
 import { spawnSync } from 'child_process';
 import mkdirp from 'mkdirp';
 
-const debug = require('debug')('umi-build-dev:MaterialDownload');
+const debug = require('debug')('n-build-dev:MaterialDownload');
 
 export function makeSureMaterialsTempPathExist(dryRun) {
   const userHome =

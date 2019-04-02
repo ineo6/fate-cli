@@ -14,8 +14,7 @@ const excludes = ['entry', 'outputPath'];
 export default function (api) {
     const {debug, cwd, config, paths} = api;
 
-    console.error("config", config);
-    // 把 n-webpack 的配置插件转化为 umi-build-dev 的
+    // 把 n-webpack 的配置插件转化为 n-build-dev 的
     api._registerConfig(() => {
         return plugins
             .filter(p => !excludes.includes(p.name))

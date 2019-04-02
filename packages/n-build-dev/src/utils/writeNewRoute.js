@@ -5,7 +5,7 @@ import escodegen from 'escodegen';
 import esquery from 'esquery';
 import prettier from 'prettier';
 
-const debug = require('debug')('umi-build-dev:writeNewRoute');
+const debug = require('debug')('n-build-dev:writeNewRoute');
 
 /**
  * 将路由写入路由文件

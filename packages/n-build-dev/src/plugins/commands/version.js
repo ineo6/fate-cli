@@ -16,7 +16,7 @@ export default api => {
             `umi@${pkg.version}`,
             `${process.platform} ${process.arch}`,
             `node@${process.version}`,
-            `umi-build-dev@${require('../../../package').version}`,
+            `n-build-dev@${require('../../../package').version}`,
             `n-webpack@${require('n-webpack/package').version}`,
             `babel-preset-umi@${require('babel-preset-umi/package').version}`,
             `umi-test@${require('umi-test/package').version}`,

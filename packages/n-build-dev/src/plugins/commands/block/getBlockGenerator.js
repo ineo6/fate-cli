@@ -5,7 +5,7 @@ import crequire from 'crequire';
 import replaceContent from './replaceContent';
 import { SINGULAR_SENSLTIVE } from '../../../constants';
 
-const debug = require('debug')('umi-build-dev:getBlockGenerator');
+const debug = require('debug')('n-build-dev:getBlockGenerator');
 
 export function getNameFromPkg(pkg) {
   if (!pkg.name) {

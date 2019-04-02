@@ -5,7 +5,7 @@ import registerBabel, { addBabelRegisterFiles } from './registerBabel';
 import isEqual from './isEqual';
 import getCodeFrame from './utils/getCodeFrame';
 
-const debug = require('debug')('umi-build-dev:getPlugin');
+const debug = require('debug')('n-build-dev:getPlugin');
 
 export default function(opts = {}) {
   const { cwd, plugins = [] } = opts;
@@ -30,7 +30,7 @@ export default function(opts = {}) {
     './plugins/history',
     './plugins/afwebpack-config',
     './plugins/mountElementId',
-    './plugins/404', // 404 must after mock
+    // './plugins/404', // 404 must after mock
     // Disable this since it make umi build exit very slowly (4s+)
     // './plugins/atoolMonitor',
     './plugins/targets',

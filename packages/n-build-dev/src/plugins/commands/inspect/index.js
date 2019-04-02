@@ -6,7 +6,7 @@ export default function(api) {
     {
       webpack: true,
       description: 'inspect internal webpack config',
-      usage: 'umi inspect [options]',
+      usage: 'archer inspect [options]',
       options: {
         '--mode':
           'specify env mode (development or production, default is development)',

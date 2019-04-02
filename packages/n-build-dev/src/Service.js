@@ -14,7 +14,7 @@ import UserConfig from './UserConfig';
 import registerBabel from './registerBabel';
 import getCodeFrame from './utils/getCodeFrame';
 
-const debug = require('debug')('umi-build-dev:Service');
+const debug = require('debug')('n-build-dev:Service');
 
 export default class Service {
   constructor({ cwd }) {
