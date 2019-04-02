@@ -1,6 +1,6 @@
 {
   "name": "n-build-dev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "@babel/code-frame": "7.0.0",
     "@babel/generator": "7.3.0",
@@ -38,7 +38,7 @@
     "mkdirp": "0.5.1",
     "multer": "^1.4.1",
     "mustache": "3.0.1",
-    "n-webpack": "^1.0.0",
+    "n-webpack": "^1.0.1",
     "ora": "3.0.0",
     "path-to-regexp": "1.7.0",
     "prettier": "1.15.3",

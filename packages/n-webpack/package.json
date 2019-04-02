@@ -1,6 +1,6 @@
 {
   "name": "n-webpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "n-webpack": "./bin/n-webpack.js"
   },
