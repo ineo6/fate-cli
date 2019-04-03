@@ -1,5 +1,5 @@
 {
-  "name": "@fate/archer",
+  "name": "fate-cli",
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
@@ -34,9 +34,5 @@
     "through2": "^3.0.0",
     "vinyl-fs": "^3.0.3"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "gitHead": "3d91e32e23f7e8a546eae97970123201d1206f52"
+  "gitHead": "9857026d0b5ec4c634e316412f590379477a5c80"
 }
