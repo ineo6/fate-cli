@@ -34,5 +34,9 @@
     "through2": "^3.0.0",
     "vinyl-fs": "^3.0.3"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "gitHead": "3d91e32e23f7e8a546eae97970123201d1206f52"
 }
