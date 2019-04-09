@@ -1,7 +1,7 @@
-import getUserConfigPlugins from 'n-webpack/getUserConfigPlugins';
+import getUserConfigPlugins from 'af-webpack/getUserConfigPlugins';
 import {compatDirname} from 'umi-utils';
 import {join, dirname} from 'path';
-import {webpackHotDevClientPath} from 'n-webpack/react-dev-utils';
+import {webpackHotDevClientPath} from 'af-webpack/react-dev-utils';
 
 const plugins = getUserConfigPlugins();
 
@@ -14,7 +14,7 @@ const excludes = ['entry', 'outputPath'];
 export default function (api) {
     const {debug, cwd, config, paths} = api;
 
-    // 把 n-webpack 的配置插件转化为 n-build-dev 的
+    // 把 af-webpack 的配置插件转化为 n-build-dev 的
     api._registerConfig(() => {
         return plugins
             .filter(p => !excludes.includes(p.name))

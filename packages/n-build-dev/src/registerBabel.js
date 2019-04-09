@@ -1,6 +1,6 @@
 import { join, isAbsolute } from 'path';
 import { existsSync } from 'fs';
-import registerBabel from 'n-webpack/registerBabel';
+import registerBabel from 'af-webpack/registerBabel';
 import { flatten } from 'lodash';
 import { winPath } from 'umi-utils';
 import { CONFIG_FILES } from './constants';

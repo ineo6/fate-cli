@@ -1,4 +1,4 @@
-import getConfig from 'n-webpack/getConfig';
+import getConfig from 'af-webpack/getConfig';
 import assert from 'assert';
 
 export default function(service) {
@@ -20,7 +20,7 @@ export default function(service) {
     });
     if (config.chainWebpack) {
       config.chainWebpack(webpackConfig, {
-        webpack: require('n-webpack/webpack'),
+        webpack: require('af-webpack/webpack'),
       });
     }
   };

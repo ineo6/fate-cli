@@ -88,8 +88,8 @@ export default function(api) {
       service
         ._applyPluginsAsync('_beforeDevServerAsync')
         .then(() => {
-          debug('start dev server with n-webpack/dev');
-          require('n-webpack/dev').default({
+          debug('start dev server with af-webpack/dev');
+          require('af-webpack/dev').default({
             cwd,
             port,
             base: service.config.base,

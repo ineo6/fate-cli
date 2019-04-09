@@ -1,1 +1,1 @@
-export default from 'n-webpack/lib/fork';
+export default from 'af-webpack/lib/fork';

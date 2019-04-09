@@ -19,7 +19,7 @@ export default function(api) {
     },
     (args = {}) => {
       const { verbose } = args;
-      const webpackChain = require('n-webpack/webpack-chain');
+      const webpackChain = require('af-webpack/webpack-chain');
       const config = service.webpackConfig;
 
       let res;

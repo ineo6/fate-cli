@@ -29,7 +29,7 @@ export default function(api) {
       // filesGenerator.generate();
 
       return new Promise((resolve, reject) => {
-        require('n-webpack/build').default({
+        require('af-webpack/build').default({
           cwd,
           webpackConfig: service.webpackConfig,
           onSuccess({ stats }) {
