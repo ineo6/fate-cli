@@ -3,7 +3,6 @@ import notify from 'umi-notify';
 // import createRouteMiddleware from './createRouteMiddleware';
 import { unwatch } from '../../../getConfig/watch';
 // import getRouteManager from '../getRouteManager';
-// import getFilesGenerator from '../getFilesGenerator';
 
 export default function(api) {
   const { service, config, log, debug } = api;
@@ -18,19 +17,17 @@ export default function(api) {
     (args = {}) => {
       notify.onDevStart({ name: 'umi', version: 2 });
 
-      // const RoutesManager = getRouteManager(service);
-      // RoutesManager.fetchRoutes();
-
       const { port } = args;
       process.env.NODE_ENV = 'development';
       service.applyPlugins('onStart');
 
-      // const filesGenerator = getFilesGenerator(service, {
-      //   RoutesManager,
-      //   mountElementId: config.mountElementId,
-      // });
-      // debug('generate files');
-      // filesGenerator.generate();
+      if (process.env.HTML !== 'none') {
+        const HtmlWebpackPlugin = require('../getHtmlWebpackPlugin').default(
+            service,
+        );
+
+        service.webpackConfig.plugins.unshift(HtmlWebpackPlugin);
+      }
 
       let server = null;
 

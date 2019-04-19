@@ -25,11 +25,11 @@ export default function(opts = {}) {
     './plugins/global-css',
     './plugins/base',
     './plugins/mountElementId',
+    './plugins/html',
     './plugins/mock',
     './plugins/proxy',
     './plugins/history',
     './plugins/afwebpack-config',
-    './plugins/mountElementId',
     // './plugins/404', // 404 must after mock
     // Disable this since it make umi build exit very slowly (4s+)
     // './plugins/atoolMonitor',

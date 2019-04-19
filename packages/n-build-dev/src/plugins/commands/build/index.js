@@ -16,19 +16,18 @@ export default function(api) {
     () => {
       notify.onBuildStart({ name: 'umi', version: 2 });
 
-      // const RoutesManager = getRouteManager(service);
-      // RoutesManager.fetchRoutes();
-
-      process.env.NODE_ENV = 'production';
-      service.applyPlugins('onStart');
-
-      // const filesGenerator = getFilesGenerator(service, {
-      //   RoutesManager,
-      //   mountElementId: config.mountElementId,
-      // });
-      // filesGenerator.generate();
-
       return new Promise((resolve, reject) => {
+        process.env.NODE_ENV = 'production';
+        service.applyPlugins('onStart');
+
+        if (process.env.HTML !== 'none') {
+          const HtmlWebpackPlugin = require('../getHtmlWebpackPlugin').default(
+              service,
+          );
+
+          service.webpackConfig.plugins.unshift(HtmlWebpackPlugin);
+        }
+
         require('af-webpack/build').default({
           cwd,
           webpackConfig: service.webpackConfig,

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "archer": "./bin/index.js"
+    "fate": "./bin/index.js"
   },
   "scripts": {
     "build": "node scripts/build.js"
