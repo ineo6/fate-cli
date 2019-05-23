@@ -92,7 +92,7 @@ class UserConfig {
   static getConfig(opts = {}) {
     const { cwd, service } = opts;
     const absConfigPath = getConfigFile(cwd, service);
-    const env = process.env.UMI_ENV;
+    const env = process.env.FATE_ENV;
     const isDev = process.env.NODE_ENV === 'development';
 
     const defaultConfig = service.applyPlugins('modifyDefaultConfig', {
@@ -140,7 +140,7 @@ class UserConfig {
   }
 
   getConfig(opts = {}) {
-    const env = process.env.UMI_ENV;
+    const env = process.env.FATE_ENV;
     const isDev = process.env.NODE_ENV === 'development';
     const { paths, cwd } = this.service;
     const { force, setConfig } = opts;
@@ -291,7 +291,7 @@ class UserConfig {
   }
 
   watchConfigs(handler) {
-    const env = process.env.UMI_ENV;
+    const env = process.env.FATE_ENV;
     const watcher = this.watch(
       'CONFIG_FILES',
       flatten(

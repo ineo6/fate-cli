@@ -9,7 +9,7 @@ let files = null;
 
 function initFiles() {
   if (files) return;
-  const env = process.env.UMI_ENV;
+  const env = process.env.FATE_ENV;
   files = [
     ...flatten(
       CONFIG_FILES.concat('config/').map(file => [
