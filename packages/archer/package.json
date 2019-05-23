@@ -1,6 +1,6 @@
 {
   "name": "fate-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -14,7 +14,7 @@
   "dependencies": {
     "dotenv": "^6.2.0",
     "is-windows": "^1.0.2",
-    "n-build-dev": "^1.1.0",
+    "n-build-dev": "^1.1.1",
     "resolve-cwd": "^2.0.0",
     "signale": "^1.3.0",
     "slash2": "^2.0.0",
